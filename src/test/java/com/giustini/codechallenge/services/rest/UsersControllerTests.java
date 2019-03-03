@@ -13,7 +13,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import static com.giustini.codechallenge.models.builders.UserBuilder.anUserBuilder;
+import static com.giustini.codechallenge.models.builders.UserBuilder.aUserBuilder;
 import static java.util.Collections.singletonList;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.core.Is.is;
@@ -38,7 +38,7 @@ public class UsersControllerTests {
     @Test
     public void GetUsersRestControllerTest() throws Exception {
 
-        User user = anUserBuilder()
+        User user = aUserBuilder()
                 .withId(1)
                 .build();
 
@@ -54,7 +54,7 @@ public class UsersControllerTests {
     @Test
     public void GetUserByIdOKRestControllerTest() throws Exception {
 
-        User user = anUserBuilder()
+        User user = aUserBuilder()
                 .withId(1)
                 .build();
 
@@ -88,7 +88,7 @@ public class UsersControllerTests {
     @Test
     public void CreateUserOkRestControllerTest() throws Exception {
 
-        User user = anUserBuilder()
+        User user = aUserBuilder()
                 .withId(1)
                 .build();
 
@@ -112,7 +112,7 @@ public class UsersControllerTests {
     @Test
     public void UpdateUserByIdOKRestControllerTest() throws Exception {
 
-        User user = anUserBuilder()
+        User user = aUserBuilder()
                 .withId(1)
                 .build();
 
@@ -128,7 +128,7 @@ public class UsersControllerTests {
     @Test
     public void UpdateUserByIdNotFoundRestControllerTest() throws Exception {
 
-        User user = anUserBuilder()
+        User user = aUserBuilder()
                 .withId(1)
                 .build();
 

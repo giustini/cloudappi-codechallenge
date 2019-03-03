@@ -9,7 +9,7 @@ public class UserBuilder {
 
     private User user;
 
-    public static UserBuilder anUserBuilder() {
+    public static UserBuilder aUserBuilder() {
         return new UserBuilder();
     }
 

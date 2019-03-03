@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import static com.giustini.codechallenge.models.builders.AddressBuilder.anAddressBuilder;
-import static com.giustini.codechallenge.models.builders.UserBuilder.anUserBuilder;
+import static com.giustini.codechallenge.models.builders.UserBuilder.aUserBuilder;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -132,7 +132,7 @@ public class UsersServiceTests {
     }
 
     private User buildUser() {
-        return anUserBuilder()
+        return aUserBuilder()
                 .withName("Homer Simpson")
                 .withEmail("homer@simpson.com")
                 .withBirthDate(LocalDateTime.parse("1956-03-12T00:00"))

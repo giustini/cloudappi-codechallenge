@@ -31,7 +31,6 @@ public class AddressBuilder {
 
     public AddressBuilder withCity(String city) {
         address.setCity(city);
-
         return this;
     }
 
