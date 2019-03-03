@@ -1,4 +1,4 @@
-package com.giustini.codechallenge.builders;
+package com.giustini.codechallenge.models.builders;
 
 import com.giustini.codechallenge.models.Address;
 import com.giustini.codechallenge.models.User;
