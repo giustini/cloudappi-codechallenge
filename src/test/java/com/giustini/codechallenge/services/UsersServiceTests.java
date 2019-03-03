@@ -138,7 +138,6 @@ public class UsersServiceTests {
                 .withBirthDate(LocalDateTime.parse("1956-03-12T00:00"))
                 .withAddress(buildAddress())
                 .build();
-
     }
 
     private Address buildAddress() {
