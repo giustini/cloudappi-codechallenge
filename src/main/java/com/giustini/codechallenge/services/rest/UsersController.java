@@ -25,8 +25,11 @@ public class UsersController {
 
     @PostMapping("createUsers")
     public ResponseEntity<User> createUser(
-            @RequestBody(required = true) User user
+            @RequestBody(required = false) User user
     ) {
+        if (user == null) {
+            return new ResponseEntity<>(HttpStatus.METHOD_NOT_ALLOWED);
+        }
         return new ResponseEntity<User>(usersService.createUser(user), HttpStatus.CREATED);
     }
 
